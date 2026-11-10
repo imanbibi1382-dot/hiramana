@@ -1,0 +1,306 @@
+{
+  "audit_timestamp": "2026-11-10 13:40:52",
+  "total_tests": 19,
+  "passes": 19,
+  "fails": 0,
+  "results": [
+    {
+      "test_name": "Zero External Network Dependencies",
+      "category": "Offline Acceptance",
+      "status": "PASS",
+      "evidence": "Scanned 7 files. 0 external CDNs or network font/script dependencies detected.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Local Static Assets Integrity",
+      "category": "Offline Acceptance",
+      "status": "PASS",
+      "evidence": "All 10 local assets present with valid non-zero byte size.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "16-Option Field-by-Field Excel Alignment",
+      "category": "Data Integrity",
+      "status": "PASS",
+      "evidence": "Verified 96 fields across all 16 options with zero unauthorized deviations.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Tehran Marketing School Priority #1 in First 3 Domains",
+      "category": "Research Caveats",
+      "status": "PASS",
+      "evidence": "Tehran Marketing School is strictly Option #1 in Marketing, Branding, and SMM.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "SMM Dedicated Course Caveat Transparency",
+      "category": "Research Caveats",
+      "status": "PASS",
+      "evidence": "SMM Option 1 explicitly discloses lack of dedicated Instagram course on website and requirement for formal syllabus/instructor confirmation.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Hook Studio Explicit Unannounced State",
+      "category": "Research Caveats",
+      "status": "PASS",
+      "evidence": "Hook Studio details (duration, tuition, contact, syllabus) remain explicitly 'اعلام نشده' with score = None.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Score Methodology Labeling (Anti-User-Review Confusion)",
+      "category": "Research Caveats",
+      "status": "PASS",
+      "evidence": "Scores explicitly labeled as 'ارزیابی تخصصی پژوهش' and disclaimers prevent confusion with public consumer ratings.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "All 7 Views Navigation",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "Successfully cycled through all 7 views.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Single First-Choice Rule Enforcement",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "mkt_1 automatically transitioned from first_choice to alternative when mkt_2 selected as first_choice.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "LocalStorage Persistence",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "Decision status and note verified in active browser LocalStorage.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Detail Modal Lifecycle",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "Detail modal opened with full option metadata and cleanly dismissed.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Comparison Matrix Engine (2-4 Options)",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "Successfully compared 3 options across 4 domains, rendered financial breakdown, removed item, and cleared.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "JSON Backup Export &amp; Import",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "Exported decisions state to JSON, reset local state, and restored via importBackup with full parity.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Keyboard Navigation Support",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "ArrowLeft, ArrowRight, Space, PageUp, PageDown, F (fullscreen), and Esc key bindings configured.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Print/PDF Report Trigger",
+      "category": "Functional Acceptance",
+      "status": "PASS",
+      "evidence": "printReport switches view to summary and initiates print stylesheet execution.",
+      "defect": "",
+      "recommendation": ""
+    },
+    {
+      "test_name": "Visual Viewport 1920x1080 (Full HD)",
+      "category": "Visual Acceptance",
+      "status": "PASS",
+      "evidence": "All 4 option cards and controls fit entirely within viewport without scrolling.",
+      "defect": "",
+      "recommendation": "Ideal for large conference room displays."
+    },
+    {
+      "test_name": "Visual Viewport 1440x900 (Executive Laptop)",
+      "category": "Visual Acceptance",
+      "status": "PASS",
+      "evidence": "All 4 option cards and controls fit within viewport with minimal padding, readable at 100% zoom.",
+      "defect": "",
+      "recommendation": "Standard presentation resolution verified."
+    },
+    {
+      "test_name": "Visual Viewport 1366x768 (Compact Screen)",
+      "category": "Visual Acceptance",
+      "status": "PASS",
+      "evidence": "Cards are fully legible; requires moderate vertical scrolling (~110-150px) to access lower card controls due to limited vertical resolution.",
+      "defect": "On 768px height displays, 2x2 grid extends beyond viewport fold by approx. 120px.",
+      "recommendation": "Use Fullscreen mode (key F) on compact laptops to maximize vertical workspace."
+    },
+    {
+      "test_name": "Persian RTL Alignment & Typography",
+      "category": "Visual Acceptance",
+      "status": "PASS",
+      "evidence": "Dir='rtl' verified on root, Vazirmatn local webfont rendering correctly, zero text clipping or overlapping controls across all 24 captured screenshots.",
+      "defect": "",
+      "recommendation": ""
+    }
+  ],
+  "screenshots": [
+    [
+      "1440x900",
+      "intro",
+      "intro_1440x900.png",
+      229637
+    ],
+    [
+      "1440x900",
+      "overview",
+      "overview_1440x900.png",
+      218335
+    ],
+    [
+      "1440x900",
+      "domain_mkt",
+      "domain_mkt_1440x900.png",
+      207258
+    ],
+    [
+      "1440x900",
+      "domain_brd",
+      "domain_brd_1440x900.png",
+      190035
+    ],
+    [
+      "1440x900",
+      "domain_smm",
+      "domain_smm_1440x900.png",
+      199033
+    ],
+    [
+      "1440x900",
+      "domain_vid",
+      "domain_vid_1440x900.png",
+      203930
+    ],
+    [
+      "1440x900",
+      "summary",
+      "summary_1440x900.png",
+      181673
+    ],
+    [
+      "1440x900",
+      "comparison_matrix",
+      "comparison_matrix_1440x900.png",
+      76351
+    ],
+    [
+      "1920x1080",
+      "intro",
+      "intro_1920x1080.png",
+      300461
+    ],
+    [
+      "1920x1080",
+      "overview",
+      "overview_1920x1080.png",
+      291870
+    ],
+    [
+      "1920x1080",
+      "domain_mkt",
+      "domain_mkt_1920x1080.png",
+      309060
+    ],
+    [
+      "1920x1080",
+      "domain_brd",
+      "domain_brd_1920x1080.png",
+      309036
+    ],
+    [
+      "1920x1080",
+      "domain_smm",
+      "domain_smm_1920x1080.png",
+      301815
+    ],
+    [
+      "1920x1080",
+      "domain_vid",
+      "domain_vid_1920x1080.png",
+      326569
+    ],
+    [
+      "1920x1080",
+      "summary",
+      "summary_1920x1080.png",
+      264586
+    ],
+    [
+      "1920x1080",
+      "comparison_matrix",
+      "comparison_matrix_1920x1080.png",
+      79254
+    ],
+    [
+      "1366x768",
+      "intro",
+      "intro_1366x768.png",
+      207498
+    ],
+    [
+      "1366x768",
+      "overview",
+      "overview_1366x768.png",
+      201309
+    ],
+    [
+      "1366x768",
+      "domain_mkt",
+      "domain_mkt_1366x768.png",
+      172968
+    ],
+    [
+      "1366x768",
+      "domain_brd",
+      "domain_brd_1366x768.png",
+      173568
+    ],
+    [
+      "1366x768",
+      "domain_smm",
+      "domain_smm_1366x768.png",
+      162931
+    ],
+    [
+      "1366x768",
+      "domain_vid",
+      "domain_vid_1366x768.png",
+      199907
+    ],
+    [
+      "1366x768",
+      "summary",
+      "summary_1366x768.png",
+      176913
+    ],
+    [
+      "1366x768",
+      "comparison_matrix",
+      "comparison_matrix_1366x768.png",
+      76755
+    ]
+  ]
+}

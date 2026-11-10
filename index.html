@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بررسی و انتخاب دوره‌های آموزشی | هلدینگ هیرامانا</title>
+  <meta name="description" content="ارائه وب تعاملی تصمیم‌گیری مدیران هلدینگ هیرامانا برای انتخاب ۱۶ گزینه برتر آموزشی در چهار حوزه تخصصی">
+  
+  <!-- استایل‌های طراحی مدرن اپل + جلوه‌های شیشه‌ای مات -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css">
+
+  <link rel="icon" type="image/png" href="assets/hiramana_logo.png">
+</head>
+<body>
+
+  <!-- هدر اصلی ناوبری شیشه‌ای -->
+  <header class="main-header" id="main-presentation-header">
+    <div class="header-container">
+      
+      <!-- لوگو و عنوان هلدینگ -->
+      <div class="header-brand" onclick="navigateTo('view-intro')">
+        <img src="assets/hiramana_logo.png" alt="لوگوی هلدینگ هیرامانا" class="header-logo-img">
+        <div class="header-title-block">
+          <span class="header-org-name">هلدینگ هیرامانا</span>
+          <span class="header-doc-label">ارزیابی دوره‌های آموزشی</span>
+        </div>
+      </div>
+
+      <!-- نوار گام‌های ناوبری (Stepper) -->
+      <nav class="header-nav-stepper" aria-label="مراحل ارائه">
+        <button class="nav-step-item" data-navigate="view-intro">معرفی</button>
+        <button class="nav-step-item" data-navigate="view-overview">نمای کلی</button>
+        <button class="nav-step-item" data-navigate="view-domain-marketing">بازاریابی</button>
+        <button class="nav-step-item" data-navigate="view-domain-branding">برندسازی</button>
+        <button class="nav-step-item" data-navigate="view-domain-social_media">شبکه‌های اجتماعی</button>
+        <button class="nav-step-item" data-navigate="view-domain-video_production">تدوین و ویدئو</button>
+        <button class="nav-step-item" data-navigate="view-summary">جمع‌بندی</button>
+      </nav>
+
+      <!-- ابزارهای کمکی سربرگ -->
+      <div class="header-actions">
+        <button class="btn-header-tool" onclick="toggleFullscreen()" title="حالت تمام‌صفحه (کلید F)">
+          <span>⛶</span> تمام‌صفحه
+        </button>
+        <button class="btn-header-tool" onclick="openBackupModal()" title="پشتیبان‌گیری و بازیابی داده‌ها">
+          <span>💾</span> پشتیبان
+        </button>
+        <button class="btn-header-tool" onclick="printReport()" title="چاپ یا ذخیره PDF گزارش">
+          <span>🖨️</span> چاپ
+        </button>
+        <span class="slide-counter" id="slide-counter-display">اسلاید ۱ از ۷</span>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- چارچوب ویوها (Viewport) -->
+  <main class="presentation-viewport">
+
+    <!-- ====================================================================
+         ویو ۱: صفحه اول — معرفی (Hero)
+         ==================================================================== -->
+    <section class="presentation-view active" id="view-intro">
+      <div class="hero-view-content">
+        <div class="hero-logo-box">
+          <img src="assets/hiramana_logo.png" alt="لوگوی رسمی هلدینگ هیرامانا" class="hero-main-logo">
+        </div>
+        <div class="hero-meta-pill">
+          <span>🏢 هلدینگ هیرامانا</span>
+          <span>•</span>
+          <span>جلسه تصمیم‌گیری مدیران ارشد</span>
+          <span>•</span>
+          <span>سال ۲۰۲۶ / ۱۴۰۵</span>
+        </div>
+        <h1 class="hero-title">بررسی و انتخاب دوره‌های آموزشی</h1>
+        <p class="hero-subtitle">
+          گزارش گزینه‌های منتخب در چهار حوزه تخصصی بر اساس پژوهش جامع، ممیزی شواهد-محور و ماتریس ارزیابی ۱۰۰ امتیازی تهران
+        </p>
+
+        <div class="hero-features-chips">
+          <span class="chip-item">🎯 اولویت ۱: آموزش خصوصی ۱ به ۱ و منتورشیپ</span>
+          <span class="chip-item">🔍 ممیزی ۱۰۰ امتیازی دقیق و ضد جعل</span>
+          <span class="chip-item">📊 ۱۶ گزینه برتر در ۴ حوزه تخصصی</span>
+          <span class="chip-item">⚖️ امکان مقایسه مستقیم و ثبت مصوبات</span>
+        </div>
+
+        <button class="btn-start-presentation" onclick="navigateTo('view-overview')">
+          <span>شروع بررسی گزینه‌ها</span>
+          <span>←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ویو ۲: صفحه دوم — نمای کلی (Overview)
+         ==================================================================== -->
+    <section class="presentation-view" id="view-overview">
+      <div class="section-header-block">
+        <span class="section-tagline">نقشه راه ارزیابی</span>
+        <h2 class="section-main-title">نمای کلی چهار حوزه تخصصی</h2>
+        <p class="section-description">
+          برای تأمین بالاترین سطح دانش مهارتی مدیران هلدینگ هیرامانا، ۱۶ گزینه منتخب در قالب ۴ حوزه تخصصی زیر ممیزی شده‌اند. 
+          جهت ورود به هر حوزه، روی کارت مربوطه کلیک کنید.
+        </p>
+      </div>
+
+      <div class="overview-grid" id="overview-domains-grid">
+        <!-- رندر خودکار کارت‌های ۴ حوزه توسط JavaScript -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ویو ۳: حوزه اول — بازاریابی (Marketing)
+         ==================================================================== -->
+    <section class="presentation-view" id="view-domain-marketing">
+      <div class="section-header-block">
+        <span class="section-tagline">حوزه تخصصی اول</span>
+        <h2 class="section-main-title">بازاریابی (Marketing)</h2>
+        <p class="section-description">
+          استراتژی بازاریابی، رشد دیجیتال، پرفورمنس مارکتینگ، تحلیل رفتار مصرف‌کننده و تدوین مارکتینگ پلن جامع سازمانی.
+        </p>
+      </div>
+
+      <div class="domain-cards-grid" id="cards-container-marketing">
+        <!-- رندر کارت‌های ۴ گزینه بازاریابی -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ویو ۴: حوزه دوم — برندسازی (Branding)
+         ==================================================================== -->
+    <section class="presentation-view" id="view-domain-branding">
+      <div class="section-header-block">
+        <span class="section-tagline">حوزه تخصصی دوم</span>
+        <h2 class="section-main-title">برندسازی (Branding)</h2>
+        <p class="section-description">
+          معماری برند، ارزش ویژه برند (Brand Equity)، تدوین سند هویت و Brand Book، هویت کلامی و طراحی دیزاین سیستم‌های سازمانی.
+        </p>
+      </div>
+
+      <div class="domain-cards-grid" id="cards-container-branding">
+        <!-- رندر کارت‌های ۴ گزینه برندسازی -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ویو ۵: حوزه سوم — مدیریت شبکه‌های اجتماعی (Social Media Management)
+         ==================================================================== -->
+    <section class="presentation-view" id="view-domain-social_media">
+      <div class="section-header-block">
+        <span class="section-tagline">حوزه تخصصی سوم</span>
+        <h2 class="section-main-title">مدیریت شبکه‌های اجتماعی (Social Media)</h2>
+        <p class="section-description">
+          استراتژی محتوا، ادمینی حرفه‌ای، سناریونویسی ویدیویی، هدایت الگوریتم‌ها و اجرای کمپین‌های اثربخش در زیست‌بوم تهران.
+        </p>
+      </div>
+
+      <div class="domain-cards-grid" id="cards-container-social_media">
+        <!-- رندر کارت‌های ۴ گزینه سوشال مدیا -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ویو ۶: حوزه چهارم — تدوین و تولید ویدئو (Video Production)
+         ==================================================================== -->
+    <section class="presentation-view" id="view-domain-video_production">
+      <div class="section-header-block">
+        <span class="section-tagline">حوزه تخصصی چهارم</span>
+        <h2 class="section-main-title">تدوین و تولید ویدئو (Video Production)</h2>
+        <p class="section-description">
+          نظریه مونتاژ دراماتیک، اصلاح و کالر ساینس سینمایی (ACES)، موشن گرافیک تبلیغاتی و پایپ‌لاین‌های استودیویی پس‌تولید.
+        </p>
+      </div>
+
+      <div class="domain-cards-grid" id="cards-container-video_production">
+        <!-- رندر کارت‌های ۴ گزینه تدوین و ویدئو -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ویو ۷: صفحه پایانی — جمع‌بندی تصمیم‌ها (Summary View)
+         ==================================================================== -->
+    <section class="presentation-view" id="view-summary">
+
+      <!-- هدر اختصاصی خروجی چاپ و PDF رسمی -->
+      <div class="print-header">
+        <div class="print-logo-box">
+          <img src="assets/hiramana_logo.png" alt="هلدینگ هیرامانا" class="print-logo-img">
+          <div>
+            <div class="print-org-title">هلدینگ هیرامانا (HiraMana Holding)</div>
+            <div>صورت‌جلسه رسمی ارزیابی و انتخاب گزینه‌های آموزش و مشاوره</div>
+          </div>
+        </div>
+        <div class="print-meta-info">
+          <div>تاریخ گزارش: نوامبر ۲۰۲۶ / آبان ۱۴۰۵</div>
+          <div>پروژه: Marketing-Education-Research</div>
+          <div>نسخه: مصوب جلسه هیئت‌مدیره</div>
+        </div>
+      </div>
+
+      <div class="section-header-block">
+        <span class="section-tagline">خروجی نهایی جلسه</span>
+        <h2 class="section-main-title">جمع‌بندی تصمیم‌ها و مصوبات جلسه</h2>
+        <p class="section-description">
+          در این بخش وضعیت تصمیم‌گیری برای هر چهار حوزه آموزشی به همراه یادداشت‌های ثبت‌شده خلاصه شده است. 
+          می‌توانید نسخه چاپی رسمی یا فایل پشتیبان تهیه فرمایید.
+        </p>
+      </div>
+
+      <!-- محتوای خودکار جمع‌بندی (KPIها و بلوک‌های ۴ گانه) -->
+      <div id="summary-content-container"></div>
+
+      <!-- صورت‌جلسه و یادداشت‌های کلی هیئت‌مدیره -->
+      <div class="meeting-notes-section">
+        <h3 class="meeting-notes-title">📝 یادداشت‌های کلی و مصوبات جلسه هیئت‌مدیره:</h3>
+        <textarea id="meeting-notes-input" class="meeting-notes-textarea" 
+          placeholder="نکات کلیدی، بودجه مصوب، زمان‌بندی مذاکره یا شروط ویژه جلسه را در این بخش بنویسید (به‌صورت خودکار ذخیره می‌شود)..."></textarea>
+      </div>
+
+      <!-- دکمه‌های عملیاتی صفحه جمع‌بندی -->
+      <div class="summary-actions-bar">
+        <button class="btn-summary-action btn-print-report" onclick="printReport()">
+          <span>🖨️</span> چاپ گزارش رسمی / ذخیره PDF
+        </button>
+        <button class="btn-summary-action btn-backup-report" onclick="handleExportBackup()">
+          <span>💾</span> دانلود فایل پشتیبان (JSON)
+        </button>
+        <button class="btn-summary-action btn-backup-report" onclick="openBackupModal()">
+          <span>📥</span> بازیابی اطلاعات از فایل
+        </button>
+        <button class="btn-summary-action btn-backup-report" style="color: #ef4444;" onclick="handleResetAll()">
+          <span>🔄</span> پاک‌سازی کلیه تصمیم‌ها
+        </button>
+      </div>
+
+      <!-- بخش امضای مدیران در نسخه چاپی -->
+      <div class="print-signature-section">
+        <div class="sig-block">
+          <div class="sig-title">مدیرعامل هلدینگ هیرامانا</div>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-block">
+          <div class="sig-title">معاونت سرمایه انسانی و آموزش</div>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-block">
+          <div class="sig-title">مدیر ارشد بازاریابی و ارتباطات</div>
+          <div class="sig-line"></div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- نوار ناوبری پایین صفحه (Bottom Control Bar) -->
+  <footer class="bottom-nav-bar">
+    <div class="bottom-nav-container">
+      <button class="btn-nav-control" id="btn-nav-prev" title="اسلاید قبلی">
+        <span>→</span>
+        <span>اسلاید قبلی</span>
+      </button>
+
+      <div class="keyboard-hint">
+        راهنما: کلیدهای <strong>فلش چپ و راست</strong> جهت ورق زدن اسلایدها • کلید <strong>F</strong> برای تمام‌صفحه • <strong>Esc</strong> برای بستن پنجره‌ها
+      </div>
+
+      <button class="btn-nav-control" id="btn-nav-next" title="اسلاید بعدی">
+        <span>اسلاید بعدی</span>
+        <span>←</span>
+      </button>
+    </div>
+  </footer>
+
+  <!-- داک شناور مقایسه (Floating Compare Dock) -->
+  <aside class="floating-compare-dock" id="floating-compare-dock">
+    <div class="compare-dock-info">
+      <span>⚖️ میز مقایسه:</span>
+      <span class="compare-count-circle" id="compare-count-badge">۰</span>
+      <span>مورد انتخاب‌شده</span>
+    </div>
+    <button class="btn-open-compare" onclick="openComparisonModal()">مشاهده جدول مقایسه مستقیم</button>
+    <button class="btn-clear-compare" onclick="window.compareEngine.clearAll()">پاک کردن</button>
+  </aside>
+
+  <!-- ====================================================================
+       مودال ۱: مشاهده جزئیات کامل گزینه
+       ==================================================================== -->
+  <div class="modal-overlay" id="modal-detail" onclick="if(event.target === this) closeAllModals()">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span class="modal-title">جزئیات کامل دوره و استاد</span>
+        <button class="modal-close-btn" onclick="closeAllModals()">✕</button>
+      </div>
+      <div class="modal-body" id="detail-modal-body">
+        <!-- رندر محتوای جزئیات با JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       مودال ۲: جدول مقایسه مستقیم گزینه‌ها
+       ==================================================================== -->
+  <div class="modal-overlay" id="modal-compare" onclick="if(event.target === this) closeAllModals()">
+    <div class="modal-dialog modal-dialog-large">
+      <div class="modal-header">
+        <span class="modal-title">میز مقایسه مستقیم گزینه‌های منتخب</span>
+        <button class="modal-close-btn" onclick="closeAllModals()">✕</button>
+      </div>
+      <div class="modal-body" id="compare-modal-body">
+        <!-- رندر جدول مقایسه با JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       مودال ۳: پشتیبان‌گیری و بازیابی اطلاعات
+       ==================================================================== -->
+  <div class="modal-overlay" id="modal-backup" onclick="if(event.target === this) closeAllModals()">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span class="modal-title">پشتیبان‌گیری و بازیابی تصمیم‌های جلسه</span>
+        <button class="modal-close-btn" onclick="closeAllModals()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="font-size: 0.9rem; line-height: 1.8; color: var(--text-main); margin-bottom: 20px;">
+          <p>تصمیم‌ها و یادداشت‌های شما به‌صورت امن و محلی روی همین مرورگر ذخیره می‌شوند. برای جلوگیری از پاک‌شدن داده‌ها یا انتقال به رایانه دیگر در اتاق جلسه، از قابلیت‌های زیر استفاده فرمایید:</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="background: #f8fafc; border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--radius-md);">
+            <h4 style="font-size: 0.95rem; margin-bottom: 6px; color: var(--brand-navy-dark);">۱. دریافت فایل پشتیبان (Export)</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">کلیه انتخاب‌ها، یادداشت‌های تک‌تک کارت‌ها و مصوبات جلسه در یک فایل متنی سبک (JSON) دانلود می‌شود.</p>
+            <button class="btn-summary-action btn-backup-report" style="padding: 8px 18px; font-size: 0.85rem;" onclick="handleExportBackup()">
+              💾 دانلود فایل پشتیبان تصمیم‌ها
+            </button>
+          </div>
+
+          <div style="background: #f8fafc; border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--radius-md);">
+            <h4 style="font-size: 0.95rem; margin-bottom: 6px; color: var(--brand-navy-dark);">۲. بازیابی از فایل پشتیبان (Import)</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">فایل پشتیبان JSON قبلی را انتخاب کنید تا کلیه تصمیم‌ها دقیقاً جایگزین و بازنشانی شوند.</p>
+            <input type="file" accept=".json" onchange="handleImportBackup(event)" style="font-family: inherit; font-size: 0.85rem;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- اسکریپت‌های پروژه (کاملاً محلی بدون وابستگی به اینترنت) -->
+  <script src="js/presentation_data.js"></script>
+  <script src="js/state_manager.js"></script>
+  <script src="js/compare_engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
