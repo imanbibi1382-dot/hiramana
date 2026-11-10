@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0B1120">
   <title>بررسی و انتخاب دوره‌های آموزشی | هلدینگ هیرامانا</title>
   <meta name="description" content="ارائه وب تعاملی تصمیم‌گیری مدیران هلدینگ هیرامانا برای انتخاب ۱۶ گزینه برتر آموزشی در چهار حوزه تخصصی">
   
@@ -329,18 +331,18 @@
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 14px;">
-          <div style="background: #f8fafc; border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--radius-md);">
-            <h4 style="font-size: 0.95rem; margin-bottom: 6px; color: var(--brand-navy-dark);">۱. دریافت فایل پشتیبان (Export)</h4>
-            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">کلیه انتخاب‌ها، یادداشت‌های تک‌تک کارت‌ها و مصوبات جلسه در یک فایل متنی سبک (JSON) دانلود می‌شود.</p>
+          <div class="backup-block">
+            <h4>۱. دریافت فایل پشتیبان (Export)</h4>
+            <p>کلیه انتخاب‌ها، یادداشت‌های تک‌تک کارت‌ها و مصوبات جلسه در یک فایل متنی سبک (JSON) دانلود می‌شود.</p>
             <button class="btn-summary-action btn-backup-report" style="padding: 8px 18px; font-size: 0.85rem;" onclick="handleExportBackup()">
               💾 دانلود فایل پشتیبان تصمیم‌ها
             </button>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--radius-md);">
-            <h4 style="font-size: 0.95rem; margin-bottom: 6px; color: var(--brand-navy-dark);">۲. بازیابی از فایل پشتیبان (Import)</h4>
-            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px;">فایل پشتیبان JSON قبلی را انتخاب کنید تا کلیه تصمیم‌ها دقیقاً جایگزین و بازنشانی شوند.</p>
-            <input type="file" accept=".json" onchange="handleImportBackup(event)" style="font-family: inherit; font-size: 0.85rem;" />
+          <div class="backup-block">
+            <h4>۲. بازیابی از فایل پشتیبان (Import)</h4>
+            <p>فایل پشتیبان JSON قبلی را انتخاب کنید تا کلیه تصمیم‌ها دقیقاً جایگزین و بازنشانی شوند.</p>
+            <input type="file" accept=".json" onchange="handleImportBackup(event)" style="font-family: inherit; font-size: 0.85rem; color: var(--text-silver);" />
           </div>
         </div>
       </div>
