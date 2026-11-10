@@ -1,0 +1,13 @@
+# ==============================================================================
+# HiraMana Holding — Git Deployment Security Whitelist
+# CRITICAL: Exclude all research files, Excel workbooks, audits, and scratch data
+# ==============================================================================
+
+# 1. Ignore everything by default
+*
+
+# 2. Whitelist ONLY publication directory and deployment configuration
+!github-pages/
+!github-pages/**
+!.gitignore
+!.nojekyll

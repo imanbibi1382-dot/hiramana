@@ -1,0 +1,213 @@
+/**
+ * print.css
+ * استایل اختصاصی چاپ و صدور گزارش رسمی تصمیم‌گیری هیئت‌مدیره هلدینگ هیرامانا
+ * فرمت بهینه‌شده برای کاغذ A4، راست‌چین و فاقد المان‌های مزاحم اینترنتی
+ */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm 12mm 15mm 12mm;
+  }
+
+  /* پنهان‌سازی عناصر تعاملی وب */
+  .main-header,
+  .bottom-nav-bar,
+  .floating-compare-dock,
+  .modal-overlay,
+  .toast-container,
+  .btn-summary-action,
+  .btn-start-presentation,
+  .card-actions,
+  .decision-selector-box,
+  .btn-remove-from-compare,
+  .keyboard-hint,
+  .card-note-wrapper,
+  .overview-card-footer,
+  #view-intro,
+  #view-overview,
+  #view-domain-marketing,
+  #view-domain-branding,
+  #view-domain-social_media,
+  #view-domain-video_production {
+    display: none !important;
+  }
+
+  /* الزام به نمایش صفحه جمع‌بندی */
+  #view-summary {
+    display: block !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    font-family: 'Vazirmatn', Tahoma, sans-serif !important;
+  }
+
+  .presentation-viewport {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* هدر رسمی برگه چاپ */
+  .print-header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2pt solid #1e3a8a;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+
+  .print-logo-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .print-logo-img {
+    height: 48px;
+    width: auto;
+  }
+
+  .print-org-title {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #1e3a8a;
+  }
+
+  .print-meta-info {
+    text-align: left;
+    font-size: 9pt;
+    color: #475569;
+    line-height: 1.5;
+  }
+
+  /* کارت‌های شاخص */
+  .summary-kpis-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 10px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .kpi-card {
+    background: #f8fafc !important;
+    border: 1pt solid #cbd5e1 !important;
+    padding: 10px !important;
+    box-shadow: none !important;
+  }
+
+  .kpi-number {
+    font-size: 16pt !important;
+  }
+
+  /* بلوک‌های حوزه‌ها */
+  .summary-domain-block {
+    background: #ffffff !important;
+    border: 1pt solid #cbd5e1 !important;
+    padding: 14px !important;
+    margin-bottom: 14px !important;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  .summary-block-header {
+    border-bottom: 1pt solid #e2e8f0 !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .summary-domain-name {
+    font-size: 12pt !important;
+    color: #1e3a8a !important;
+  }
+
+  .summary-decisions-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .summary-item-box {
+    border: 1pt solid #cbd5e1 !important;
+    padding: 10px !important;
+    background: #f8fafc !important;
+  }
+
+  .summary-item-box.box-first-choice {
+    border-color: #059669 !important;
+    background: #f0fdf4 !important;
+  }
+
+  .item-box-title {
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+  }
+
+  .item-box-course {
+    font-size: 8.5pt !important;
+    color: #334155 !important;
+  }
+
+  .item-box-note {
+    font-size: 8pt !important;
+    background: #ffffff !important;
+    border: 1pt dashed #cbd5e1 !important;
+    padding: 4px 6px !important;
+    margin-top: 6px !important;
+  }
+
+  /* یادداشت‌های جلسه */
+  .meeting-notes-section {
+    background: #ffffff !important;
+    border: 1pt solid #cbd5e1 !important;
+    padding: 14px !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  .meeting-notes-textarea {
+    border: none !important;
+    padding: 0 !important;
+    font-size: 10pt !important;
+    min-height: auto !important;
+    resize: none !important;
+  }
+
+  /* بخش امضای صورت‌جلسه در انتهای پرینت */
+  .print-signature-section {
+    display: flex !important;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1pt solid #cbd5e1;
+    page-break-inside: avoid;
+  }
+
+  .sig-block {
+    text-align: center;
+    width: 30%;
+  }
+
+  .sig-title {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+  }
+
+  .sig-line {
+    border-bottom: 1pt dotted #94a3b8;
+    height: 1px;
+  }
+}
+
+/* در حالت عادی وب، المان‌های پرینت مخفی هستند */
+.print-header,
+.print-signature-section {
+  display: none;
+}
+
