@@ -212,6 +212,10 @@ function renderDomainPage(domain) {
           ${opt.instructor_display && opt.instructor_display !== opt.provider_name ? `
             <div class="course-instructor-text">👨‍🏫 مدرس: ${opt.instructor_display}</div>
           ` : ''}
+          <div class="card-contact-row">
+            ${opt.phone ? `<span class="contact-pill-item" title="تلفن تماس"><span class="c-icon">📞</span><span class="c-val ltr-text">${opt.phone}</span></span>` : ''}
+            ${opt.website ? `<span class="contact-pill-item" title="وب‌سایت رسمی"><span class="c-icon">🌐</span><a href="${opt.website_url || ('https://' + opt.website)}" target="_blank" rel="noopener noreferrer" class="c-link ltr-text">${opt.website}</a></span>` : ''}
+          </div>
         </div>
 
         <!-- نوار فشرده ۳ شاخص کلیدی در یک نگاه (مدت | شهریه | محل و شیوه) -->

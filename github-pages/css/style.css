@@ -615,6 +615,52 @@ body {
   margin-top: 2px;
 }
 
+/* ردیف شماره تماس و وب‌سایت در کارت */
+.card-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+  padding-top: 5px;
+  border-top: 1px dashed rgba(226, 232, 240, 0.9);
+  flex-wrap: wrap;
+  font-size: 0.74rem;
+}
+
+.contact-pill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+}
+
+.contact-pill-item .c-icon {
+  font-size: 0.8rem;
+}
+
+.contact-pill-item .c-val {
+  font-weight: 600;
+  color: var(--brand-navy-dark);
+}
+
+.contact-pill-item .c-link {
+  color: var(--brand-navy);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(26, 54, 126, 0.5);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.contact-pill-item .c-link:hover {
+  color: var(--brand-gold-dark, #b48c18);
+  border-bottom-color: var(--brand-gold);
+}
+
+.ltr-text {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
 /* نوار فشرده ۳ مشخصه کلیدی (Quick Metrics) */
 .card-quick-metrics {
   display: flex;
