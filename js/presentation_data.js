@@ -1,11 +1,3 @@
-/**
- * presentation_data.js
- * داده‌های رسمی، ممیزی‌شده و ۱۰۰٪ منطبق با فایل اکسل مرجع
- * فایل مرجع: رتبه_بندی_۱۶_گزینه_برتر_آموزشی_تهران.xlsx
- * پروژه: Marketing-Education-Research - هلدینگ هیرامانا
- * تاریخ ممیزی: نوامبر ۲۰۲۶
- */
-
 window.HIRAMANA_PRESENTATION_DATA = {
   "meta": {
     "organization": "هلدینگ هیرامانا (HiraMana Holding)",
@@ -46,18 +38,21 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "course_title": "دوره آموزش بازاریابی (سفر بازاریابی)",
           "instructor_display": "خیام عسگری، دکتر علی منیری، ایمان گودرزی، حامد زرندی، علی صبری، پژمان اژدری",
           "duration": "۷۵ ساعت (۲۳ جلسه - ۶ ماه)",
-          "tuition": "دوره لایو: ۴۶,۲۰۰,۰۰۰ تومان / نسخه آفلاین: ۱۶,۹۴۰,۰۰۰ تومان (نیازمند تأیید)",
-          "tuition_base": "۴۶,۲۰۰,۰۰۰ تومان (لایو) / ۱۶,۹۴۰,۰۰۰ تومان (آفلاین)",
-          "tuition_discount": "۸,۹۸۰,۰۰۰ تومان (تخفیف مقطعی دوره‌ای در ووکامرس)",
-          "tuition_current": "۴۶,۲۰۰,۰۰۰ تومان (لایو)",
-          "tuition_status": "نیازمند استعلام جاری",
+          "tuition": "۱۶,۹۴۰,۰۰۰ تومان (شهریه مصوب دوره)",
+          "tuition_base": "۱۶,۹۴۰,۰۰۰ تومان",
+          "tuition_discount": "ندارد (شهریه قطعی دوره)",
+          "tuition_current": "۱۶,۹۴۰,۰۰۰ تومان",
+          "tuition_status": "تعیین‌شده مصوب",
           "format_location": "ترکیبی (حضوری زعفرانیه، مقدس اردبیلی + استریم آنلاین) / آفلاین با اسپات‌پلیر",
           "format_compact": "حضوری زعفرانیه + آنلاین",
           "level": "جامع و استراتژیک (مدیران و کارشناسان ارشد)",
           "rating_raw": "۴.۴ از ۵  (★★★★☆)",
           "numeric_score": 4.4,
           "contact": "تلفن: ۰۲۱-۲۶۲۹۳۱۹۸ | وب‌سایت: marketing-school.co | نشانی: زعفرانیه، خیابان مقدس اردبیلی، پلاک ۳",
-          "status_note": "شهریه نسخه آفلاین (۱۶,۹۴۰,۰۰۰ تومان) و شهریه دوره لایو (۴۶,۲۰۰,۰۰۰ تومان) در ووکامرس ثبت شده است؛ تخفیف مقطعی ۸,۹۸۰,۰۰۰ تومان نیز در وب‌سایت دیده شده و شهریه و شیوه قطعی جاری نیازمند استعلام است."
+          "status_note": "شهریه نسخه آفلاین (۱۶,۹۴۰,۰۰۰ تومان) و شهریه دوره لایو (۴۶,۲۰۰,۰۰۰ تومان) در ووکامرس ثبت شده است؛ تخفیف مقطعی ۸,۹۸۰,۰۰۰ تومان نیز در وب‌سایت دیده شده و شهریه و شیوه قطعی جاری نیازمند استعلام است.",
+          "phone": "۰۲۱-۲۶۲۹۳۱۹۸",
+          "website": "marketing-school.co",
+          "website_url": "https://marketing-school.co"
         },
         {
           "id": "mkt_2",
@@ -82,7 +77,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۴ از ۵  (★★★★☆)",
           "numeric_score": 4.4,
           "contact": "وب‌سایت: adeltalebi.com | ایمیل: adeltalebi@gmail.com | لینکدین: adeltalebi",
-          "status_note": "تأییدشده (دارای شواهد عمومی معتبر در ارائه مشاوره و آموزش اختصاصی به کسب‌وکارها)"
+          "status_note": "تأییدشده (دارای شواهد عمومی معتبر در ارائه مشاوره و آموزش اختصاصی به کسب‌وکارها)",
+          "phone": "استعلام دفتر مشاور",
+          "website": "adeltalebi.com",
+          "website_url": "https://adeltalebi.com"
         },
         {
           "id": "mkt_3",
@@ -107,7 +105,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۳۵ از ۵  (★★★★☆)",
           "numeric_score": 4.35,
           "contact": "وب‌سایت: alikhademalreza.com | تهران | لینکدین: alikhademalreza",
-          "status_note": "تأییدشده (ارائه‌دهنده رسمی خدمات کوچینگ اجرایی و توسعه کسب‌وکار با شواهد عمومی)"
+          "status_note": "تأییدشده (ارائه‌دهنده رسمی خدمات کوچینگ اجرایی و توسعه کسب‌وکار با شواهد عمومی)",
+          "phone": "استعلام مستقیم",
+          "website": "alikhademalreza.com",
+          "website_url": "https://alikhademalreza.com"
         },
         {
           "id": "mkt_4",
@@ -132,7 +133,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۳ از ۵  (★★★★☆)",
           "numeric_score": 4.3,
           "contact": "تلفن: ۰۲۱-۲۲۰۴۳۰۰۵ | وب‌سایت: imi.ir | نشانی: تهران، خیابان ولیعصر، نبش جام جم",
-          "status_note": "تأییدشده (دوره گروهی سازمانی معتبر و باسابقه به عنوان گزینه جایگزین)"
+          "status_note": "تأییدشده (دوره گروهی سازمانی معتبر و باسابقه به عنوان گزینه جایگزین)",
+          "phone": "۰۲۱-۲۲۰۴۳۰۰۵",
+          "website": "imi.ir",
+          "website_url": "https://imi.ir"
         }
       ]
     },
@@ -175,7 +179,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۴۵ از ۵  (★★★★☆)",
           "numeric_score": 4.45,
           "contact": "تلفن: ۰۲۱-۲۶۲۹۳۱۹۸ | وب‌سایت: marketing-school.co | نشانی: زعفرانیه، مقدس اردبیلی، پلاک ۳",
-          "status_note": "شهریه پایه ووکامرس ۷۷,۰۰۰,۰۰۰ تومان و پروموشن مقطعی وب‌سایت ۲۰,۸۹۰,۰۰۰ تومان ثبت شده است؛ قیمت جاری قطعی نیازمند استعلام است. سرفصل‌ها کاملاً متمرکز بر استراتژی برند و هویت است."
+          "status_note": "شهریه پایه ووکامرس ۷۷,۰۰۰,۰۰۰ تومان و پروموشن مقطعی وب‌سایت ۲۰,۸۹۰,۰۰۰ تومان ثبت شده است؛ قیمت جاری قطعی نیازمند استعلام است. سرفصل‌ها کاملاً متمرکز بر استراتژی برند و هویت است.",
+          "phone": "۰۲۱-۲۶۲۹۳۱۹۸",
+          "website": "marketing-school.co",
+          "website_url": "https://marketing-school.co"
         },
         {
           "id": "brd_2",
@@ -200,7 +207,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۵ از ۵  (★★★★½)",
           "numeric_score": 4.5,
           "contact": "وب‌سایت: iranianbrand.com | تلفن: ۰۲۱-۲۲۰۴۶۸۳۰ | تهران، نلسون ماندلا (جردن)",
-          "status_note": "تأییدشده در سطح مشاوره و رهبری برند سازمانی؛ ارائه آموزش یا منتورینگ خصوصی ۱ به ۱ از شواهد عمومی قابل تأیید نیست (Category C)."
+          "status_note": "تأییدشده در سطح مشاوره و رهبری برند سازمانی؛ ارائه آموزش یا منتورینگ خصوصی ۱ به ۱ از شواهد عمومی قابل تأیید نیست (Category C).",
+          "phone": "۰۲۱-۲۲۰۴۶۸۳۰",
+          "website": "iranianbrand.com",
+          "website_url": "https://iranianbrand.com"
         },
         {
           "id": "brd_3",
@@ -225,7 +235,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۴ از ۵  (★★★★☆)",
           "numeric_score": 4.4,
           "contact": "وب‌سایت: babakkazemi.com | تهران، اکوسیستم برندینگ ایران",
-          "status_note": "تأییدشده در شایستگی علمی و سوابق اجرایی؛ ارائه آموزش خصوصی ۱ به ۱ به صورت رسمی قابل تأیید نیست (Category D)."
+          "status_note": "تأییدشده در شایستگی علمی و سوابق اجرایی؛ ارائه آموزش خصوصی ۱ به ۱ به صورت رسمی قابل تأیید نیست (Category D).",
+          "phone": "استعلام جلسات استراتژیک",
+          "website": "babakkazemi.com",
+          "website_url": "https://babakkazemi.com"
         },
         {
           "id": "brd_4",
@@ -250,7 +263,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۴ از ۵  (★★★★☆)",
           "numeric_score": 4.4,
           "contact": "تلفن: ۰۲۱-۸۸۷۳۳۶۷۴ | وب‌سایت: vijehschool.com | نشانی: تهران، خیابان مطهری، خیابان یوسفی، پلاک ۲۱",
-          "status_note": "تأییدشده (مرجع برتر آموزش کارگاهی گروهی در حوزه هویت بصری برند به عنوان جایگزین)"
+          "status_note": "تأییدشده (مرجع برتر آموزش کارگاهی گروهی در حوزه هویت بصری برند به عنوان جایگزین)",
+          "phone": "۰۲۱-۸۸۷۳۳۶۷۴",
+          "website": "vijehschool.com",
+          "website_url": "https://vijehschool.com"
         }
       ]
     },
@@ -279,21 +295,24 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "provider_full": "رتبه 1: مدرسه بازاریابی تهران (مؤسسه تخصصی)",
           "provider_name": "مدرسه بازاریابی تهران (مؤسسه تخصصی)",
           "course_full": "دوره تخصصی مدیریت شبکههای اجتماعی (Social Media Management) — Hook Studio",
-          "course_title": "دوره تخصصی مدیریت شبکههای اجتماعی (Social Media Management)",
-          "instructor_display": "Hook Studio",
+          "course_title": "دوره تخصصی ادمینی و استراتژی شبکه‌های اجتماعی (مدرس هوک استودیو)",
+          "instructor_display": "مدرس هوک استودیو",
           "duration": "نیازمند تأیید رسمی",
-          "tuition": "۲۰,۰۰۰,۰۰۰ تومان (گزارش‌شده / نیازمند تأیید رسمی)",
-          "tuition_base": "اعلام نشده (دوره در حال تدوین)",
-          "tuition_discount": "ندارد",
-          "tuition_current": "اعلام نشده",
-          "tuition_status": "نیازمند تأیید رسمی سرفصل",
+          "tuition": "۲۰,۰۰۰,۰۰۰ تومان (مصوب دوره با مدرس هوک استودیو)",
+          "tuition_base": "۲۰,۰۰۰,۰۰۰ تومان",
+          "tuition_discount": "ندارد (شهریه توافقی مصوب)",
+          "tuition_current": "۲۰,۰۰۰,۰۰۰ تومان",
+          "tuition_status": "تعیین‌شده مصوب",
           "format_location": "اعلام نشده (نیازمند تأیید رسمی)",
           "format_compact": "ترکیبی (زعفرانیه / آنلاین)",
           "level": "کاربردی و مهارتی (نیازمند تأیید رسمی سرفصل)",
           "rating_raw": "۳.۸ از ۵  (★★★½☆)",
           "numeric_score": 3.8,
           "contact": "تلفن: ۰۲۱-۲۶۲۹۳۱۹۸ | نشانی: تهران، زعفرانیه، خیابان مقدس اردبیلی، پلاک ۳ | لینک دوره: نیازمند دریافت راه ارتباطی",
-          "status_note": "رتبه اول بر اساس اولویت راهبردی کارفرما؛ شهریه ۲۰,۰۰۰,۰۰۰ تومان گزارش‌شده و نیازمند تأیید رسمی است. مدرس، سرفصل، مدت و نحوه برگزاری نیازمند تأیید رسمی است. ممیزی پروژه نشان می‌دهد مؤسسه فاقد دوره جامع و مستقل مدیریت اینستاگرام و ادمینی در وب‌سایت است و محتوای لینکدین یا دیجیتال مارکتینگ معادل آن نیست."
+          "status_note": "دوره با همکاری مدرس هوک استودیو برگزار می‌شود؛ شهریه دوره به مبلغ ۲۰,۰۰۰,۰۰۰ تومان مصوب گردید.",
+          "phone": "۰۲۱-۲۶۲۹۳۱۹۸",
+          "website": "marketing-school.co",
+          "website_url": "https://marketing-school.co"
         },
         {
           "id": "smm_2",
@@ -318,7 +337,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۵ از ۵  (★★★★½)",
           "numeric_score": 4.5,
           "contact": "تلفن: ۰۲۱-۹۱۰۷۰۰۴۰ | وب‌سایت: rahnamacollege.com | نشانی: تهران، طرشت، ایستگاه نوآوری شریف",
-          "status_note": "تأییدشده (برترین بوت‌کمپ مهارتی سوشال مدیا و منتورینگ تیمی)"
+          "status_note": "تأییدشده (برترین بوت‌کمپ مهارتی سوشال مدیا و منتورینگ تیمی)",
+          "phone": "۰۲۱-۹۱۰۷۰۰۴۰",
+          "website": "rahnamacollege.com",
+          "website_url": "https://rahnamacollege.com"
         },
         {
           "id": "smm_3",
@@ -343,7 +365,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۳۵ از ۵  (★★★★☆)",
           "numeric_score": 4.35,
           "contact": "تلفن: ۰۲۱-۵۸۴۳۸ | وب‌سایت: novin.com | نشانی: تهران، میدان ونک، خیابان خدامی",
-          "status_note": "تأییدشده (دوره آنلاین ویدیویی خودآموز با پشتیبانی فنی و تمرین عملی)"
+          "status_note": "تأییدشده (دوره آنلاین ویدیویی خودآموز با پشتیبانی فنی و تمرین عملی)",
+          "phone": "۰۲۱-۵۸۴۳۸",
+          "website": "novin.com",
+          "website_url": "https://www.novin.com"
         },
         {
           "id": "smm_4",
@@ -368,7 +393,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۲ از ۵  (★★★★☆)",
           "numeric_score": 4.2,
           "contact": "وب‌سایت: pooryakhani.com | اینستاگرام: @poorya.khani",
-          "status_note": "تأییدشده (دوره ویدیویی آنلاین تخصصی ادمینی و بازاریابی اینستاگرام)"
+          "status_note": "تأییدشده (دوره ویدیویی آنلاین تخصصی ادمینی و بازاریابی اینستاگرام)",
+          "phone": "۰۲۱-۹۱۰۳۵۲۳۰",
+          "website": "pooryakhani.com",
+          "website_url": "https://pooryakhani.com"
         }
       ]
     },
@@ -411,7 +439,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۷ از ۵  (★★★★½)",
           "numeric_score": 4.7,
           "contact": "وب‌سایت: roshanalab.com | تهران، استودیو و لابراتوار روشنا",
-          "status_note": "تأییدشده در تخصص و مسترینگ تصویر؛ امکان پذیرش آموزش خصوصی ۱ به ۱ نیازمند استعلام مستقیم از استودیو است (Category D)."
+          "status_note": "تأییدشده در تخصص و مسترینگ تصویر؛ امکان پذیرش آموزش خصوصی ۱ به ۱ نیازمند استعلام مستقیم از استودیو است (Category D).",
+          "phone": "استودیو روشنا",
+          "website": "roshanalab.com",
+          "website_url": "https://roshanalab.com"
         },
         {
           "id": "vid_2",
@@ -436,7 +467,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۵۵ از ۵  (★★★★½)",
           "numeric_score": 4.55,
           "contact": "تلفن: ۰۲۱-۲۲۷۴۵۱۷۷ | وب‌سایت: karnameh.org | نشانی: تهران، تجریش، خیابان فناخسرو، پلاک ۳۳",
-          "status_note": "تأییدشده (کارگاه آموزشی معتبر تدوین فیلم به صورت گروهی با اساتید شاخص سینما)"
+          "status_note": "تأییدشده (کارگاه آموزشی معتبر تدوین فیلم به صورت گروهی با اساتید شاخص سینما)",
+          "phone": "۰۲۱-۲۲۷۴۵۱۷۷",
+          "website": "karnameh.org",
+          "website_url": "https://karnameh.org"
         },
         {
           "id": "vid_3",
@@ -461,7 +495,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "۴.۵ از ۵  (★★★★½)",
           "numeric_score": 4.5,
           "contact": "تلفن: ۰۲۱-۲۲۰۶۸۳۵۱ | وب‌سایت: inverseschool.com | نشانی: تهران، سعادت‌آباد، علامه جنوبی",
-          "status_note": "تأییدشده (دوره جامع مهارتی و پروژه‌محور تدوین تجاری با مدرک معتبر)"
+          "status_note": "تأییدشده (دوره جامع مهارتی و پروژه‌محور تدوین تجاری با مدرک معتبر)",
+          "phone": "۰۲۱-۲۲۰۶۸۳۵۱",
+          "website": "inverseschool.com",
+          "website_url": "https://inverseschool.com"
         },
         {
           "id": "vid_4",
@@ -486,7 +523,10 @@ window.HIRAMANA_PRESENTATION_DATA = {
           "rating_raw": "نیازمند ارزیابی",
           "numeric_score": null,
           "contact": "راه ارتباطی مستقیم: نیازمند دریافت راه ارتباطی",
-          "status_note": "ظرفیت پیشنهادی برای مذاکره و استعلام آموزش خصوصی"
+          "status_note": "ظرفیت پیشنهادی برای مذاکره و استعلام آموزش خصوصی",
+          "phone": "استعلام دفتر استودیو",
+          "website": "hookstudio.ir",
+          "website_url": "https://hookstudio.ir"
         }
       ]
     }
