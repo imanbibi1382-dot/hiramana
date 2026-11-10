@@ -40,11 +40,15 @@
     transform: none !important;
   }
 
+  :root {
+    color-scheme: light !important;
+  }
+
   body {
     background: #ffffff !important;
-    color: #000000 !important;
+    color: #0b1120 !important;
     font-size: 11pt !important;
-    font-family: 'Vazirmatn', Tahoma, sans-serif !important;
+    font-family: 'Peyda', 'PeydaFaNum', -apple-system, sans-serif !important;
   }
 
   .presentation-viewport {
